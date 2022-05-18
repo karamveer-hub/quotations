@@ -1,0 +1,133 @@
+body {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    flex-direction: column;
+}
+
+section {
+    width: 600px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+#section_div{
+    background-color: rgba(128, 128, 128, 0.353);
+    border-radius: 20px;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    padding: 30px;
+}
+
+form {
+    min-height: 300px;
+    width: 600px;
+    background: linear-gradient(to left, rgb(181, 0, 188), rgb(75, 0, 75));
+    position: relative;
+    opacity: 0.4;
+    border-radius: 10px;
+}
+
+input {
+    position: absolute;
+
+    font-size: 14px;
+    outline: none;
+    border: none;
+    background: rgba(128, 128, 128, 0.195);
+    color: white;
+    /* border-bottom: 1px solid red; */
+    width: 60%;
+    padding: 5px 10px;
+
+
+}
+
+#quote {
+    bottom: 20px;
+    left: 20px;
+}
+
+#author {
+    bottom: 60px;
+    left: 20px;
+}
+
+#button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    font-size: 14px;
+    padding: 3px;
+    color: black;
+}
+
+li {
+    position: relative;
+    list-style: none;
+    padding: 20px 25px;
+}
+
+li::before {
+    content: "";
+    background: url('comma.png') no-repeat center;
+    position: absolute;
+    background-size: 100%;
+    bottom: 10px;
+    height: 30px;
+    width: 20px;
+    top: 20px;
+    left: 0;
+    color: white;
+    transform: rotate(180deg);
+    z-index: 20;
+}
+
+li::after {
+    content: "";
+    background: url('comma.png') no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    height: 30px;
+    width: 20px;
+    right: 0px;
+    color: white;
+    z-index: 20;
+}
+
+blockquote {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+span {
+    position: absolute;
+    right: 30px;
+    color: gray;
+
+
+}.inputHistory{
+    height: auto;
+    width: 200px;
+    background-color:rgba(142, 142, 142, 0.067) ;
+    display: none;
+    border-radius: 10px;
+width: 60%;
+left: 20px;
+position: absolute;
+top: 100%;
+padding: 10px;
+color: rgb(175, 175, 175);
+border: 0.3px dotted rgba(255, 255, 255, 0.203);
+    border-top: 0;
+}
+.hidden{
+    display: block;
+}
